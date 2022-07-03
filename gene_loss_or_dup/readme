@@ -1,0 +1,9 @@
+This pipeline is a read-mapping-based method to identifying gene losses and duplications.
+The required input files are the BAM file for the alignment of individual sequencing reads with the reference genome, as well as the gff file (gene.gff) and gene name file (gene.lst) for the reference species.
+
+The specific operation steps are as follows:
+(1)prepare.pl is used to obtain the reads depth of the gene coding region; it is necessary to modify the path information of the required files before use.
+(2)lostOrNot.pl judges whether the gene is lost in the target species based on the differences of multiple individual coding regions;
+(3)check_gene_copy.pl is used to judge whether this gene is doubled in the target species.
+
+If you have any questions, please contact wenjiexu1996@gmail.com or 2018203450@mail.nwpu.edu.cn.
